@@ -5,6 +5,7 @@
 }
 
 body{
+    width: 100%;
     overflow: scroll;
 	overflow-x: hidden;
 }
@@ -25,6 +26,11 @@ h1,h2{
     color: #C2302A;
     font-style: italic;
     margin-left: 70px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #F7F1F0;
 }
 
 
@@ -97,6 +103,11 @@ nav li{
     top:-400px;
 }
 
+#carp
+{
+    background-color: #F7F1F0;
+}
+
 .carp_text{
     position: relative;
     height: 800px;
@@ -112,6 +123,7 @@ nav li{
 .carp_right{
     position: absolute;
     top:-190px;
+    left: -30px;
 
 }
 
@@ -126,4 +138,329 @@ nav li{
     text-shadow:1px 1px 2px #afabab
 }
 
+.carp_menu{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
 
+.to_menu{
+    margin: 30px 20px;
+}
+
+.carp_menu a{
+    background: #C2302A;
+    display: block;
+    height: 225px;
+}
+
+.carp_menu a img:hover{
+    opacity:0.5;
+	transition:0.3s;
+    text-align: center;
+}
+
+.carp_menu p{
+    font-size: 50px;
+    position: absolute;
+    font-family: 'Permanent Marker', cursive;
+    font-style: italic;
+    top:80px;
+    margin-left: 100px;
+    color: #C2302A;
+}
+
+.carp_menu p span{
+    font-size:20px;
+    position: absolute;
+    font-family: 'Permanent Marker', cursive;
+    font-style: italic;
+}
+
+
+.carp_menu p:hover{
+    color: #F7F1F0;
+    transition: 0.3s;
+}
+
+
+
+
+/* ここからグッズのページ */
+#goods_main{
+    background-color: #403E3E;
+    background-image: url(img/p0519_m\ 1.png);
+    
+
+}
+.marker_left{
+    position: relative;
+    left: -810px;
+    bottom: 30px;
+}
+
+.goods_content_right{
+    display: flex;
+    margin-left: 490px;
+    margin-top: 100px;
+    position: relative;
+    z-index: auto;
+}
+
+.goods_content_photo img{
+    filter: drop-shadow(8px 8px #afabab);   
+    width: 380px;
+}
+
+.photo_right{
+    transform: rotate(20deg);
+}
+
+#goods_main a{
+    text-decoration: none;
+    color: #F7F1F0;
+    margin-top: 20px;
+}
+
+#goods_main p{
+    color: #F7F1F0;
+    font-size: 14px;
+    width: 380px;
+    
+}
+
+
+.btnlinestretches2{
+    /*線の基点とするためrelativeを指定*/
+	position:relative;
+    /*ボタンの形状*/  
+	color:#F7F1F0;
+    padding: 5px 20px;
+	display:inline-block;
+    text-decoration: none;
+    outline: none;
+}
+
+/*線の設定*/
+.btnlinestretches2::before,
+.btnlinestretches2::after {
+	content:'';
+    /*絶対配置で線の位置を決める*/
+	position:absolute;
+    /*事前に出現させる線の形状*/
+	border:solid #F7F1F0;
+	width:10px;
+	height:10px;
+    /*アニメーションの指定*/
+	transition:all 0.3s ease-in-out;
+    border-radius: 2px;
+}
+
+.btnlinestretches2::before{
+    /*事前に出現させる線の位置*/
+	top:0;
+	left:0;
+    /*事前に出現させる線の形状*/
+	border-width:2px 0 0 2px;
+}
+
+.btnlinestretches2::after{
+    /*事前に出現させる線の位置*/
+	bottom:0;
+	right:0;
+    /*事前に出現させる線の形状*/
+	border-width:0 2px 2px 0;
+}
+
+/*hoverした際の線の形状*/
+.btnlinestretches2:hover::before,
+.btnlinestretches2:hover::after{
+	width:calc(100% - 2px);
+	height:calc(100% - 2px);
+	border-color:#F7F1F0
+}
+
+.productname{
+    font-size: 35px !important;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 144px;
+}
+
+.productname span{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+.goods_content_text{
+    width: 400px;
+    margin-top: 200px;
+}
+
+.toilet{
+    margin-bottom: -30px !important;
+    position: absolute;
+    top: 102px;
+    font-size: 30px !important;
+}
+
+
+
+
+
+/* ここからゲーム */
+#game_main{
+    background-color: #403E3E;
+    background-image: url(img/kousi.png);
+    height: 100vh;
+}
+
+#game_main p{
+    color: #F7F1F0;
+    line-height: 180%;
+}
+
+.game_content{
+    margin-top: 250px;
+}
+
+.game_comidasi{
+    position: relative;
+}
+
+.tategaki{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150% !important;
+    position: absolute;
+    left: 180px;
+}
+
+.game_marker{
+    position: absolute;
+    top: 160px;
+    left: 100px;
+    z-index: 3;
+}
+
+.game_photo{
+    position: relative;
+    left: 240px;
+    top: 100px;
+    z-index: 2;
+}
+.game_content{
+    display: flex;
+}
+
+.game_content_text{
+    background-image: url(img/game_bg.png);
+    background-size: cover;
+    height: 360px;
+    width: 900px;
+    position: absolute;
+    right: 0;
+}
+
+
+.count{
+    position: absolute;
+    font-size: 80px;
+    font-style: italic;
+    font-family: 'Permanent Marker', cursive;
+    opacity: 0.3;
+    letter-spacing: 10px;
+    left: 140px;
+}
+
+.game_content_bottum{
+    margin-left: 180px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.gamename{
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.score{
+    font-size: 16px;
+    margin: 25px 0;
+}
+
+.date{
+    font-size: 12px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+
+/* ここから選手紹介 */
+
+#player_main{
+    background-color: #403E3E;
+
+}
+
+.one_player{
+    background-color: #F7F1F0;
+    width: 600px;
+    margin: 30px 20px;
+    position: relative;
+    height: 250px;
+    padding: 20px;
+
+}
+
+.playernumber{
+    color: #C2302A;
+    font-size: 50px;
+    font-weight: 900;
+    font-style: italic;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top:10px;
+}
+
+.playername{
+    color: #C2302A;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+    top:10px;
+    left: 270px;
+}
+
+.playerhistory{
+    font-weight: 14px;
+    position: absolute;
+    top: 200px;
+    left: 270px;
+}
+
+.players{
+    display: flex;
+    justify-content: center;
+}
+
+.sample_box{
+    width:300px;
+    position: absolute;
+    top: 65px;
+    left: 50px;
+   }
+   .sample_box img{
+    transition:1s all;
+    width: 180px;
+   }
+   .sample_box img:hover{
+     transform:scale(1.2,1.2);
+     transition:1s all;
+   }
+   
