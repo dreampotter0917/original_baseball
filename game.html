@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="style.css">
     <!-- フォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,17 +27,26 @@
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bubblegum+Sans&family=M+PLUS+Rounded+1c&family=Mochiy+Pop+P+One&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Permanent+Marker&display=swap"
         rel="stylesheet">
     <title>Document</title>
+
 </head>
 
 <body>
 
     <nav>
         <ul>
-            <a href="index.html"><li>About</a></li>
+            <a href="index.html">
+                <li>About
+            </a></li>
             <li>Carp</li>
-            <a href="player.html"><li>Player</a></li>
-            <a href="goods.html"><li>Goods</a></li>
-            <a href="game.html"><li>Game</a></li>
+            <a href="player.html">
+                <li>Player
+            </a></li>
+            <a href="goods.html">
+                <li>Goods
+            </a></li>
+            <a href="game.html">
+                <li>Game
+            </a></li>
             <li>try</li>
         </ul>
     </nav>
@@ -38,89 +55,96 @@
         <h1>GAME</h1>
         <h2>試合</h2>
 
+        <div class="section1">
 
-        <div class="game_content">
-            <div class="game_comidasi">
-                <p class="tategaki">諦めない</p>
-                <img class="game_marker" src="img/game_marker.png" alt="">
+            <div class="game_content element">
+                <div class="game_comidasi">
+                    <p class="tategaki">諦めない</p>
+                    <img class="game_marker" src="img/game_marker.png" alt="">
+                </div>
+                <img class="game_photo" src="img/game_tanabata.png" alt="">
+                <div class="game_content_text">
+                    <p class="count">01</p>
+                    <div class="game_content_bottum">
+                        <p class="gamename">七夕の奇跡</p>
+                        <p class="score">試合結果：ヤクルト８ー９広島</p>
+                        <p>５点ビハインドで迎えた９回表、相手ピッチャーは新守護神小川だった。
+                            誰もが大差での敗北を覚悟した中、ここで諦めないのが広島カープ。
+                            先頭打者がホームランで点数を返すと、尚も反撃は止まらず２死１、３塁となる。
+                            ここでバッターボックスに立ったのは代打新井貴弘。
+                            新井は小川の投げたボールをバックスクリーンに打ち返したのだ。
+                            この奇跡的な逆転を試合の日と掛け合わせて七夕の奇跡と呼ばれている。</p>
+                        <p class="date">（2017.7.7)</p>
+                    </div>
+                </div>
             </div>
-            <img class="game_photo" src="img/game_tanabata.png" alt="">
-            <div class="game_content_text">
-                <p class="count">01</p>
-                <div class="game_content_bottum">
-                    <p class="gamename">七夕の奇跡</p>
-                    <p class="score">試合結果：ヤクルト８ー９広島</p>
-                    <p>５点ビハインドで迎えた９回表、相手ピッチャーは新守護神小川だった。
-                        誰もが大差での敗北を覚悟した中、ここで諦めないのが広島カープ。
-                        先頭打者がホームランで点数を返すと、尚も反撃は止まらず２死１、３塁となる。
-                        ここでバッターボックスに立ったのは代打新井貴弘。
-                        新井は小川の投げたボールをバックスクリーンに打ち返したのだ。
-                        この奇跡的な逆転を試合の日と掛け合わせて七夕の奇跡と呼ばれている。</p>
-                    <p class="date">（2017.7.7)</p>
+
+            <div class="game_content element">
+                <div class="game_comidasi_2">
+                    <p class="tategaki">悪夢の日</p>
+                    <img class="game_marker" src="img/game_marker.png" alt="">
+                </div>
+                <img class="game_photo_2" src="img/game_tanabata.png" alt="">
+                <div class="game_content_text_2">
+                    <p class="count_2">02</p>
+                    <div class="game_content_bottum_2">
+                        <p class="gamename">横浜の悪夢</p>
+                        <p class="score">試合結果：横浜５ー６広島</p>
+                        <p>うまく行く時もあれば行かない時もあります。この試合では４点リードで迎えた９回裏。後は守り切れば勝ちという場面でなんと３者連続ホームランを打たれてしまうのです。それにより広島はさよなら負け。不運は止まらず、この試合から３試合連続で奇しくもさよなら負けをしてしまうのです。それに２試合目ではチームの主力であった鈴木誠也が骨折をしてしまう事態にもなりました。
+                        </p>
+                        <p class="date">（2017.８.22)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game_content element">
+                <div class="game_comidasi">
+                    <p class="tategaki">４連覇</p>
+                    <img class="game_marker" src="img/game_marker.png" alt="">
+                </div>
+                <img class="game_photo" src="img/game_tanabata.png" alt="">
+                <div class="game_content_text">
+                    <p class="count">03</p>
+                    <div class="game_content_bottum">
+                        <p class="gamename">思い出の日</p>
+                        <p class="score">試合結果：巨人4ー6広島</p>
+                        <p>この日カープは25年ぶりの優勝を決めたのだ。なぜカープはこの年に優勝することができたのだろうか？そこにはいくつかの要因があったように感じる。一つ目は投打でベテランの新井、黒田が活躍をおさめた点にある。新井と黒田のベテランを精神的支柱として若者がのびのびとプレイできたのだ。
+                            またタナキクマルの打線も安定して得点圏にランナーを出し安定して得点を収めた。
+
+                        </p>
+                        <p class="date">（2016.11.5)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game_content element">
+                <div class="game_comidasi_2">
+                    <p class="tategaki">投げる</p>
+                    <img class="game_marker" src="img/game_marker.png" alt="">
+                </div>
+                <img class="game_photo_2" src="img/game_tanabata.png" alt="">
+                <div class="game_content_text_2">
+                    <p class="count_2">04</p>
+                    <div class="game_content_bottum_2">
+                        <p class="gamename">番外編</p>
+                        <p class="score">試合結果：中日３ー５広島</p>
+                        <p>広島カープでの珍事といえばブラウン監督のベース投げを思い浮かべる人が多いのではないでしょうか。この試合では審判の判決に不満を持ったブラウン監督が審判への抗議の意を込めて、なんとベースを引っこ抜いて投げたのだ。
+                            ブラウン監督はこの他にも様々な形で抗議を示してきた。審判の判決を待っている間に靴を脱ぎ、揃えてその上に帽子をおいたこともあった。
+                            また近年ではこのように審判に抗議を示す人も少なくなってきたように感じる。
+                        </p>
+                        <p class="date">（2006.5.7)</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="game_content">
-            <div class="game_comidasi_2">
-                <p class="tategaki">悪夢の日</p>
-                <img class="game_marker" src="img/game_marker.png" alt="">
-            </div>
-            <img class="game_photo_2" src="img/game_tanabata.png" alt="">
-            <div class="game_content_text_2">
-                <p class="count_2">02</p>
-                <div class="game_content_bottum_2">
-                    <p class="gamename">横浜の悪夢</p>
-                    <p class="score">試合結果：横浜５ー６広島</p>
-                    <p>うまく行く時もあれば行かない時もあります。この試合では４点リードで迎えた９回裏。後は守り切れば勝ちという場面でなんと３者連続ホームランを打たれてしまうのです。それにより広島はさよなら負け。不運は止まらず、この試合から３試合連続で奇しくもさよなら負けをしてしまうのです。それに２試合目ではチームの主力であった鈴木誠也が骨折をしてしまう事態にもなりました。</p>
-                    <p class="date">（2017.８.22)</p>
-                </div>
-            </div>
+        <div class="section2">
+            <p><a href="https://www.carp.co.jp/">広島カープ公式ホームページはこちら</a></p>
         </div>
 
-        <div class="game_content">
-            <div class="game_comidasi">
-                <p class="tategaki">４連覇</p>
-                <img class="game_marker" src="img/game_marker.png" alt="">
-            </div>
-            <img class="game_photo" src="img/game_tanabata.png" alt="">
-            <div class="game_content_text">
-                <p class="count">03</p>
-                <div class="game_content_bottum">
-                    <p class="gamename">思い出の日</p>
-                    <p class="score">試合結果：巨人4ー6広島</p>
-                    <p>この日カープは25年ぶりの優勝を決めたのだ。なぜカープはこの年に優勝することができたのだろうか？そこにはいくつかの要因があったように感じる。一つ目は投打でベテランの新井、黒田が活躍をおさめた点にある。新井と黒田のベテランを精神的支柱として若者がのびのびとプレイできたのだ。
-                        またタナキクマルの打線も安定して得点圏にランナーを出し安定して得点を収めた。
-                        
-                    </p>
-                    <p class="date">（2016.11.5)</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="game_content">
-            <div class="game_comidasi_2">
-                <p class="tategaki">投げる</p>
-                <img class="game_marker" src="img/game_marker.png" alt="">
-            </div>
-            <img class="game_photo_2" src="img/game_tanabata.png" alt="">
-            <div class="game_content_text_2">
-                <p class="count_2">04</p>
-                <div class="game_content_bottum_2">
-                    <p class="gamename">番外編</p>
-                    <p class="score">試合結果：中日３ー５広島</p>
-                    <p>広島カープでの珍事といえばブラウン監督のベース投げを思い浮かべる人が多いのではないでしょうか。この試合では審判の判決に不満を持ったブラウン監督が審判への抗議の意を込めて、なんとベースを引っこ抜いて投げたのだ。
-                        ブラウン監督はこの他にも様々な形で抗議を示してきた。審判の判決を待っている間に靴を脱ぎ、揃えてその上に帽子をおいたこともあった。
-                        また近年ではこのように審判に抗議を示す人も少なくなってきたように感じる。
-                    </p>
-                    <p class="date">（2006.5.7)</p>
-                </div>
-            </div>
-        </div>
 
-     
 
-        
 
 
     </section>

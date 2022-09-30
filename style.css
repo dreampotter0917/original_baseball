@@ -147,8 +147,8 @@ nav a:hover{
     margin-left: 40px;
     margin-top: 80px;
     color: #403E3E;
-    font-weight: 400;
-    text-shadow:1px 1px 2px #afabab
+    font-weight: 700;
+    /* text-shadow:1px 1px 2px #afabab */
 }
 
 .carp_menu{
@@ -213,70 +213,21 @@ nav a:hover{
     line-height: 60px;
 }
 
+#let{
+    background-color: #E8E6E4;
+    height: 1580px;
 
-* {
-    box-sizing: border-box;
-  }
-  .sliderArea {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 25px;
-  }
-  .sliderArea.w300 {
-    max-width: 300px;
-  }
-  .slick-slide {
-    margin: 0 5px;
-  }
-  .slick-slide img {
-    width: 160px;
-    height: auto;
-  }
-  .slick-prev, .slick-next {
-    z-index: 1;
-  }
- 
-  .slick-slide {
-    transition: all ease-in-out .3s;
-    opacity: .2;
-  }
-  .slick-active {
-    opacity: 1;
-  }
-  .slick-current {
-    opacity: 1;
-  }
-  .thumb {
-    margin: 20px 0 0;
-  }
-  .thumb .slick-slide {
-    cursor: pointer;
-  }
-  .thumb .slick-slide:hover {
-    opacity: .7;
-  }
-  
-  /*====================================================================
-  .full-screen
-  ====================================================================*/
-  
-  .full-screen .slick-list {
-    overflow: visible;
-  }
-  .full-screen.slider {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-  
- 
- .studium{
-    display: flex !important;
-    width: 500px !important;
- }
+}
+
+.seat{
+    background-color: #E8E6E4;
+    height: 400px;
+}
+
 
 .seat{
     display: flex;
-    margin-bottom: 100px;
+    margin-top: 200px;
 }
 
 .oneseat{
@@ -335,26 +286,48 @@ nav a:hover{
     text-align: center;
     position: relative;
     top: 58px;
-    padding-bottom: 10px;
+    padding-bottom: 130px;
+    z-index: 10;
     
 }
 
 .section2 a{
     color: #F7F1F0;
+    position: absolute;
+    display: block;
+    top: 100px;
+    left:600px
+  
 
 }
+
+.sankaku_ue{
+    position: absolute;
+    top:-10px;
+    height: 400px;
+    width: 100vw;
+}
+
+.sankaku_sita{
+    position: absolute;
+    top:700px;
+    height: 400px;
+    width: 100vw;
+}
+
+/* ここからグッズのページ */
 
 .goods_content_right{
     position: relative;
 }
 
 
-/* ここからグッズのページ */
+
 #goods_main{
+    
     background-color: #403E3E;
     background-image: url(img/p0519_m\ 1.png);
-    height: 2200px;
-    z-index: ;
+    height: 2385px;
 }
 
 .marker_left{
@@ -530,13 +503,26 @@ nav a:hover{
 }
 
 
+#wrap {
+    width: 0;
+    height: 180px;
+    overflow: hidden;
+    transition: 1000ms linear;
+}
+#wrap.is-show {
+    width: 320px;
+}
+
+
+
+
 /* ここからゲーム */
 
 
 #game_main{
     background-color: #403E3E;
     background-image: url(img/kousi.png);
-    height: 2700px;
+    height: 2707px;
 }
 
 #game_main p{
@@ -659,11 +645,29 @@ nav a:hover{
 }
 
 
+.element {
+    /* 最初は非表示 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+  }
+  /* フェードイン時に入るクラス */
+  .is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    z
+  }
+
+  
+
 /* ここから選手紹介 */
 
 #player_main{
+    height: 2242px;
     background-color: #403E3E;
-
+    
 }
 
 .one_player{
@@ -671,7 +675,7 @@ nav a:hover{
     width: 600px;
     margin: 30px 20px;
     position: relative;
-    height: 250px;
+    height: 285px;
     padding: 20px;
 
 }
@@ -687,6 +691,8 @@ nav a:hover{
 }
 
 .playername{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
     color: #C2302A;
     font-size: 50px;
     font-weight: bold;
@@ -694,6 +700,8 @@ nav a:hover{
     position: absolute;
     top:10px;
     left: 270px;
+    width: 338px;
+    letter-spacing: 4px;
 }
 
 .playerhistory{
@@ -713,13 +721,85 @@ nav a:hover{
     position: absolute;
     top: 65px;
     left: 50px;
+    background-image: url(img/kemuri.png);
    }
    .sample_box img{
     transition:1s all;
     width: 180px;
+    filter: drop-shadow(8px 0px 3px #afabab); 
+
    }
    .sample_box img:hover{
-     transform:scale(1.2,1.2);
+     transform:scale(1.1,1.1);
      transition:1s all;
    }
    
+
+   .slider{
+    margin: 150px 0;
+   }
+
+   /* スライダー改訂 */
+   .slider img{
+    width: 250px;
+    padding-right: 30px;
+    margin: 15px;
+   }
+
+/*-----------height調整----------*/
+.slick-slide{
+	height:auto!important;
+    margin-right: 1vw!important;
+    margin-left: 1vw!important;
+}
+/*------------------------------*/
+
+
+/*-----------矢印表示----------*/
+.slick-next{
+    right:0!important;
+}
+.slick-prev{
+    left:0!important;
+}
+.slick-arrow{
+    width: initial!important;
+    height: initial!important;
+    z-index:2!important;
+}
+.slick-arrow:before{
+    font-size: 30px!important;
+}
+/*------------------------------*/
+
+.slider_content{
+    display: flex !important;
+    background-color: #403E3E;
+    height: 250px;
+    align-items: center;
+}
+
+.slider_text{
+    color: #F7F1F0;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+.slider_text p{
+    margin-top: 10px;
+}
+
+.studium_name{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 19px !important;
+}
+
+.mypattern .slick-slide:not(.slick-center) {
+    -webkit-filter: opacity(20%);
+    -moz-filter: opacity(20%);
+    -o-filter: opacity(20%);
+    -ms-filter: opacity(20%);
+    filter: opacity(20%);
+    transition: 0.2s linear;
+}
