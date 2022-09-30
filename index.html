@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="style.css">
     <!-- フォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,19 +23,30 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=M+PLUS+Rounded+1c&family=Mochiy+Pop+P+One&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Permanent+Marker&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bubblegum+Sans&family=M+PLUS+Rounded+1c&family=Mochiy+Pop+P+One&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bubblegum+Sans&family=M+PLUS+Rounded+1c&family=Mochiy+Pop+P+One&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
     <title>Document</title>
+
 </head>
 
 <body>
 
     <nav>
         <ul>
-            <a href="index.html"><li>About</a></li>
-            <li>carp</li>
-            <a href="index.html"><li>Player</a></li>
-            <a href="player.html"><li>Goods</a></li>
-            <a href="game.html"><li>Game</a></li>
+            <a href="index.html">
+                <li>About
+            </a></li>
+            <li>Carp</li>
+            <a href="player.html">
+                <li>Player
+            </a></li>
+            <a href="goods.html">
+                <li>Goods
+            </a></li>
+            <a href="game.html">
+                <li>Game
+            </a></li>
             <li>try</li>
         </ul>
     </nav>
@@ -58,7 +77,7 @@
         <div class="carp_text">
             <div class="carp_text_right">
                 <img src="img/carp_right.png" width="1000" class="carp_right">
-                <img src="img/carp_left.png"  height="640" class="carp_left">
+                <img src="img/carp_left.png" height="640" class="carp_left">
                 <p>
                     日本には球団と呼ばれる野球チームが12個ありますが、<br>
                     その中でも私が推している広島カープについて紹介したいと思います。<br>
@@ -104,16 +123,161 @@
     </section>
 
     <section id="let">
-        <h1>Let's go</h1>
-        <h2>観戦に行こう</h2>
-        <p>
-            テレビでの観戦も良いですが、実際に野球場に足を運んでみるのはいかがでしょうか。<br>
-            野球場は全国各地にあります。また座席の種類も沢山です。<br>
-            ぜひお気に入りの球場、座席を見つけてみてください。
-        </p>
+        <div class="section1">
+            <h1>Let's go</h1>
+            <h2>観戦に行こう</h2>
+            <p class="let_text">
+                テレビでの観戦も良いですが、実際に野球場に足を運んでみるのはいかがでしょうか。<br>
+                野球場は全国各地にあります。また座席の種類も沢山です。<br>
+                ぜひお気に入りの球場、座席を見つけてみてください。
+            </p>
+            <div class="sider">
+            </div>
+
+
+            <div class="section">
+
+                <div class="sliderArea">
+                    <div class="full-screen slider">
+
+                        <div class="studium">
+                            <img src="img/hamasuta.png" alt="125naroom" class="slide_img">
+                            <div class="studiam_info">
+                                <p class="studiumname">横浜スタジアム</p>
+                                <p class="studiuminfo">
+                                    球団：横浜DeNAベイスターズ<br>
+                                    所在地：神奈川県関内駅から徒歩5分
+                                </p>
+                                <p>
+                                    オリンピックに合わせて作られたwing席が特徴です。横浜が得点を入れた際には、汽笛の音が流れます。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="studium">
+                            <img src="img/hamasuta.png" alt="125naroom" class="slide_img">
+                            <div class="studiam_info">
+                                <p class="studiumname">横浜スタジアム</p>
+                                <p class="studiuminfo">
+                                    球団：横浜DeNAベイスターズ<br>
+                                    所在地：神奈川県関内駅から徒歩5分
+                                </p>
+                                <p>
+                                    オリンピックに合わせて作られたwing席が特徴です。横浜が得点を入れた際には、汽笛の音が流れます。
+                                </p>
+                            </div>
+                        </div>
+                     
+                        <div class="studium">
+                            <img src="img/hamasuta.png" alt="125naroom" class="slide_img">
+                            <div class="studiam_info">
+                                <p class="studiumname">横浜スタジアム</p>
+                                <p class="studiuminfo">
+                                    球団：横浜DeNAベイスターズ<br>
+                                    所在地：神奈川県関内駅から徒歩5分
+                                </p>
+                                <p>
+                                    オリンピックに合わせて作られたwing席が特徴です。横浜が得点を入れた際には、汽笛の音が流れます。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="studium">
+                            <img src="img/hamasuta.png" alt="125naroom" class="slide_img">
+                            <div class="studiam_info">
+                                <p class="studiumname">横浜スタジアム</p>
+                                <p class="studiuminfo">
+                                    球団：横浜DeNAベイスターズ<br>
+                                    所在地：神奈川県関内駅から徒歩5分
+                                </p>
+                                <p>
+                                    オリンピックに合わせて作られたwing席が特徴です。横浜が得点を入れた際には、汽笛の音が流れます。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="studium">
+                            <img src="img/hamasuta.png" alt="125naroom" class="slide_img">
+                            <div class="studiam_info">
+                                <p class="studiumname">横浜スタジアム</p>
+                                <p class="studiuminfo">
+                                    球団：横浜DeNAベイスターズ<br>
+                                    所在地：神奈川県関内駅から徒歩5分
+                                </p>
+                                <p>
+                                    オリンピックに合わせて作られたwing席が特徴です。横浜が得点を入れた際には、汽笛の音が流れます。
+                                </p>
+                            </div>
+                        </div>
+
+                       <div class="studium">
+                            <img src="img/hamasuta.png" alt="125naroom" class="slide_img">
+                            <div class="studiam_info">
+                                <p class="studiumname">横浜スタジアム</p>
+                                <p class="studiuminfo">
+                                    球団：横浜DeNAベイスターズ<br>
+                                    所在地：神奈川県関内駅から徒歩5分
+                                </p>
+                                <p>
+                                    オリンピックに合わせて作られたwing席が特徴です。横浜が得点を入れた際には、汽笛の音が流れます。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              
+
+
+            <div class="seat">
+                <div class="oneseat">
+                    <p class="seatname">砂被り席</p>
+                    <div class="seatintro">
+                        <img src="img/sunakaburi.png">
+                        <p class="seattext">
+                            とにかく選手を間近で感じたい！そんなあなたにオススメなのはこの席！フェンスも低く選手のプレイ姿を至近距離で見ることができますまた広島カープが勝った時には選手とハイタッチできるんです！
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="oneseat">
+                    <p class="seatname">内野席</p>
+                    <div class="seatintro">
+                        <img src="img/sunakaburi.png">
+                        <p class="seattext">
+                            ご飯や飲み物も楽しみながら座ってゆっくりと野球を応援したい！そんなあなたにオススメなのは内野席！特に内野手に推しの選手がいる人には最高の座席です！プレイをみながら球場ならではのグルメを満喫してみませんか？
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="oneseat">
+                    <p class="seatname">外野席</p>
+                    <div class="seatintro">
+                        <img src="img/sunakaburi.png">
+                        <p class="seattext">
+                            頑張っている選手を応援したい！楽しみたい！そんなあなたにオススメなのはこの席！外野席では広島カープならではのスクワット応援ができます。応援団の演奏も近くで聞くことができてお祭り気分で楽しめます。
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="section2">
+        <p><a href="https://www.carp.co.jp/">広島カープ公式ホームページはこちら</a></p>
+    </div>
+
+
+
     </section>
 
     <footer>
+
     </footer>
 
 </body>

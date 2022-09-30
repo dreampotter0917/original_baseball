@@ -46,21 +46,34 @@ nav{
     background-color: #403E3E;  
     position: sticky;
     top: 0;
-    z-index: 3;
+    z-index: 5;
 }
 
 nav ul{
     display: flex;
     right: 20px;
-    margin-left: 800px;
+    margin-left: 685px;
 
 }
 
 nav li{
     list-style: none;
     color: #F7F1F0;
-    margin: 20px;
+    margin: 20px 0;
     font-size: 24px;
+    padding: 0 30px;
+    border-left:solid #F7F1F0 ;
+    
+}
+
+nav a{
+    transition: 00.3s;
+}
+
+nav a:hover{
+    color: #C2302A;
+    letter-spacing: 0.1rem;
+    
 }
 
 #about{
@@ -154,11 +167,7 @@ nav li{
     height: 225px;
 }
 
-.carp_menu a img:hover{
-    opacity:0.5;
-	transition:0.3s;
-    text-align: center;
-}
+
 
 .carp_menu p{
     font-size: 50px;
@@ -168,6 +177,7 @@ nav li{
     top:80px;
     margin-left: 100px;
     color: #C2302A;
+    transition: 0.3s;
 }
 
 .carp_menu p span{
@@ -177,43 +187,238 @@ nav li{
     font-style: italic;
 }
 
+.carp_menu :hover img{
+    opacity:0.5;
+	transition:0.3s;
+    text-align: center;
+}
 
-.carp_menu p:hover{
+.carp_menu :hover p{
     color: #F7F1F0;
     transition: 0.3s;
 }
 
+.carp_menu img{
+    transition: 0.3s;
+    
+}
 
+.let_text{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    color: #403E3E;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  .sliderArea {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+  .sliderArea.w300 {
+    max-width: 300px;
+  }
+  .slick-slide {
+    margin: 0 5px;
+  }
+  .slick-slide img {
+    width: 160px;
+    height: auto;
+  }
+  .slick-prev, .slick-next {
+    z-index: 1;
+  }
+ 
+  .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+  }
+  .slick-active {
+    opacity: 1;
+  }
+  .slick-current {
+    opacity: 1;
+  }
+  .thumb {
+    margin: 20px 0 0;
+  }
+  .thumb .slick-slide {
+    cursor: pointer;
+  }
+  .thumb .slick-slide:hover {
+    opacity: .7;
+  }
+  
+  /*====================================================================
+  .full-screen
+  ====================================================================*/
+  
+  .full-screen .slick-list {
+    overflow: visible;
+  }
+  .full-screen.slider {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+ 
+ .studium{
+    display: flex !important;
+    width: 500px !important;
+ }
+
+.seat{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.oneseat{
+    text-align: center;
+    width: 31%;
+}
+
+.seatname{
+    color: #C2302A;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    
+
+}
+
+.seattext{
+    font-size: 13px;
+    line-height: 20px;
+    width: 500px;
+    text-align: left;
+    margin: 0 30px;
+
+}
+
+.seatintro{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.section1{
+  position: relative;
+ 
+  /*レイアウト用のCSS*/
+
+}
+.section1::before{
+  content:"";
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+ 
+  /*ここで三角形のサイズを決める。
+  必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+  border-width: 0 0 130px 100vw ;
+ 
+  border-color: transparent transparent #C2302A transparent;
+}
+
+.section2{
+    text-align: center;
+    position: relative;
+    top: 58px;
+    padding-bottom: 10px;
+    
+}
+
+.section2 a{
+    color: #F7F1F0;
+
+}
+
+.goods_content_right{
+    position: relative;
+}
 
 
 /* ここからグッズのページ */
 #goods_main{
     background-color: #403E3E;
     background-image: url(img/p0519_m\ 1.png);
-    
-
+    height: 2200px;
+    z-index: ;
 }
+
 .marker_left{
     position: relative;
     left: -810px;
     bottom: 30px;
 }
 
-.goods_content_right{
-    display: flex;
-    margin-left: 490px;
-    margin-top: 100px;
+.marker_right{
     position: relative;
+    left: 0px;
+    bottom: 30px;
+}
+
+
+.goods_content_left{
+    display: flex;
+    top:100px;
+    height: 500px;
+    left: 440px;
+    z-index: auto;
+    position: relative;
+
+}
+
+
+.goods_content_right{
+    position: relative;
+    display: flex;
+    top:100px;
+    height: 530px;
+    left: 600px;
     z-index: auto;
 }
 
-.goods_content_photo img{
-    filter: drop-shadow(8px 8px #afabab);   
-    width: 380px;
+.goods_content_text{
+    position: absolute;
+    width: 400px;
+    margin-top: 200px;
+    left: -210px;
 }
 
+.goods_content_text2{
+    position: absolute;
+    width: 400px;
+    margin-top: 200px;
+    left: 210px;
+}
+
+
 .photo_right{
-    transform: rotate(20deg);
+    transform: rotate(10deg);
+    filter: drop-shadow(8px 8px #afabab);   
+    width: 380px;
+    position: absolute;
+    left: 260px;
+}
+
+.photo_left{
+    transform: rotate(-10deg);
+    filter: drop-shadow(8px 8px #afabab);   
+    width: 380px;
+    position: absolute;
+    left: -260px;
 }
 
 #goods_main a{
@@ -230,6 +435,50 @@ nav li{
 }
 
 
+
+
+.productname{
+    position: absolute;
+    font-size: 35px !important;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 10px;
+    top:-60px
+}
+
+
+.productname2{
+    position: absolute;
+    font-size: 35px !important;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 10px;
+    top: -55px;
+}
+
+.productname  span{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+.productname2 span{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+
+.toilet{
+    margin-bottom: -30px !important;
+    position: absolute;
+    top: -100px;
+    font-size: 30px !important;
+}
+
+
+
+/* 購入はこちらのボタン */
 .btnlinestretches2{
     /*線の基点とするためrelativeを指定*/
 	position:relative;
@@ -280,42 +529,14 @@ nav li{
 	border-color:#F7F1F0
 }
 
-.productname{
-    font-size: 35px !important;
-    font-weight: 700;
-    font-style: italic;
-    margin-bottom: 10px;
-    position: absolute;
-    top: 144px;
-}
-
-.productname span{
-    font-size: 20px;
-    margin-left: 20px;
-    margin-top: 0px;
-}
-
-.goods_content_text{
-    width: 400px;
-    margin-top: 200px;
-}
-
-.toilet{
-    margin-bottom: -30px !important;
-    position: absolute;
-    top: 102px;
-    font-size: 30px !important;
-}
-
-
-
-
 
 /* ここからゲーム */
+
+
 #game_main{
     background-color: #403E3E;
     background-image: url(img/kousi.png);
-    height: 100vh;
+    height: 2700px;
 }
 
 #game_main p{
@@ -331,18 +552,23 @@ nav li{
     position: relative;
 }
 
+.game_comidasi_2{
+    position: relative;
+    left: 1000px;
+}
+
 .tategaki{
     font-size: 24px;
     font-weight: 700;
     line-height: 150% !important;
     position: absolute;
-    left: 180px;
+    left: 195px;
 }
 
 .game_marker{
     position: absolute;
     top: 160px;
-    left: 100px;
+    left: 120px;
     z-index: 3;
 }
 
@@ -352,6 +578,14 @@ nav li{
     top: 100px;
     z-index: 2;
 }
+
+.game_photo_2{
+    position: relative;
+    left: 727px;
+    top: 100px;
+    z-index: 2;
+}
+
 .game_content{
     display: flex;
 }
@@ -365,6 +599,15 @@ nav li{
     right: 0;
 }
 
+.game_content_text_2{
+    background-image: url(img/game_bg.png);
+    background-size: cover;
+    height: 360px;
+    width: 900px;
+    position: absolute;
+    left: 0;
+}
+
 
 .count{
     position: absolute;
@@ -376,10 +619,26 @@ nav li{
     left: 140px;
 }
 
+.count_2{
+    position: absolute;
+    font-size: 80px;
+    font-style: italic;
+    font-family: 'Permanent Marker', cursive;
+    opacity: 0.3;
+    letter-spacing: 10px;
+    left: 10px;
+}
+
 .game_content_bottum{
     margin-left: 180px;
     margin-top: 50px;
     margin-right: 50px;
+}
+
+.game_content_bottum_2{
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 200px;
 }
 
 .gamename{
@@ -396,7 +655,7 @@ nav li{
 .date{
     font-size: 12px;
     text-align: right;
-    margin-top: 10px;
+    margin-top: -8px;
 }
 
 
