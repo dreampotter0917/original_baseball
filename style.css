@@ -215,7 +215,7 @@ nav a:hover{
 
 #let{
     background-color: #E8E6E4;
-    height: 1580px;
+    height: 1575px;
 
 }
 
@@ -303,14 +303,14 @@ nav a:hover{
 
 .sankaku_ue{
     position: absolute;
-    top:-10px;
+    top:2800px;
     height: 400px;
     width: 100vw;
 }
 
 .sankaku_sita{
     position: absolute;
-    top:700px;
+    top:-55px;
     height: 400px;
     width: 100vw;
 }
@@ -327,7 +327,7 @@ nav a:hover{
     
     background-color: #403E3E;
     background-image: url(img/p0519_m\ 1.png);
-    height: 2385px;
+    height: 2375px;
 }
 
 .marker_left{
@@ -394,7 +394,7 @@ nav a:hover{
     left: -260px;
 }
 
-#goods_main a{
+.goods_content_left a{
     text-decoration: none;
     color: #F7F1F0;
     margin-top: 20px;
@@ -522,7 +522,7 @@ nav a:hover{
 #game_main{
     background-color: #403E3E;
     background-image: url(img/kousi.png);
-    height: 2707px;
+    height: 2607px;
 }
 
 #game_main p{
@@ -783,6 +783,7 @@ nav a:hover{
     color: #F7F1F0;
     font-size: 14px;
     padding-left: 30px;
+    padding-right: 30px;
 }
 
 .slider_text p{
@@ -803,3 +804,206 @@ nav a:hover{
     filter: opacity(20%);
     transition: 0.2s linear;
 }
+
+
+
+
+
+/* ここからレスポンシブ */
+@media
+ screen and (max-width: 480px) {
+    /* ここからプレイヤー */
+    .players{
+        display: block;
+    }
+
+    .one_player{
+        width: 280px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .playernumber{
+        font-size: 30px;
+    }
+
+    .playername{
+        font-size: 24px;
+    }
+
+    .one_player img{
+        width: 100px;
+    }
+
+    .sample_box{
+        left: 12px;
+    }
+
+    .playername{
+        font-size: 22px;
+        left: 155px;
+        top: 25px;
+    }
+
+    .playerhistory{
+        font-size: 10px;
+        position: relative;
+        top: 90px;
+        left: 135px;
+    }
+
+    /* ここからグッズ */
+    .photo_right{
+        width: 220px;
+        left: -296px;
+        filter: drop-shadow(3px 3px #afabab);
+    }
+
+    .photo_left{
+        left: -580px;
+        width: 220px;
+        filter: drop-shadow(3px 3px #afabab);
+    }
+      
+
+
+    .productname{
+        font-size: 18px !important; 
+        position: relative;
+        top: -10px;
+    }
+
+    .productname span{
+        font-size: 12px;
+    }
+
+    .goods_content_text{
+        left: -400px;
+        margin-top: 210px;
+    }
+
+    #goods_main p{
+        font-size: 14px;
+        width: 280px;
+    }
+
+    .marker_left {
+        position: relative;
+        left: -990px;
+        bottom: -33px;
+    }
+
+    .goods_content_text2{
+        margin-top: 300px;
+        left: -500px;
+    }
+
+    .productname2{
+        top: -65px;
+    }
+
+    .toilet{
+        top: -32px !important;
+        margin-bottom: 10px;
+    }
+
+    .midasi{
+        height: 0px;
+    }
+
+    .tt{
+        margin-top: 60px;
+    }
+
+    /* ここからゲーム */
+
+    .game_content{
+        margin-bottom: 400px;
+    }
+    .game_content_text{
+        height: 315px;
+        width: 300px;
+    }
+
+    .game_content_text_2{
+        height: 315px;
+        width: 300px;
+    }
+
+    .game_content_bottum {
+        margin-left: 15px;
+        margin-top: 17px;
+        margin-right: 15px;
+    }
+
+    .game_content_bottum_2{
+        margin-left: 15px;
+        margin-top: 17px;
+        margin-right: 15px;
+    }
+
+    .count{
+        left: 10px;
+        font-size: 20px !important;
+    }
+
+
+    .count_2{
+        left: 10px;
+        font-size: 20px !important;
+    }
+
+    .game_content_text p{
+        margin-top: 2px;
+        font-size: 12px
+    }
+
+    .game_content_text_2 p{
+        margin-top: 2px;
+        font-size: 12px
+    }
+
+    .game_photo{
+        width: 300px;
+        left: 0;
+        top: 270px;
+    }
+
+    .game_photo_2{
+        width: 300px;
+        left: 89px;
+        top: 291px;
+    }
+
+    .game_marker {
+        top: 311px;
+        left: 19px;
+        width: 65px;
+    }
+
+    .tategaki{
+        font-size: 20px;
+        left: 41px;
+        top: 188px;
+        z-index: 3;
+    }
+
+    .komidasi2{
+        left: 276px;
+    }
+
+    /* ここからトップ */
+    h1{
+        font-size: 50px;
+    }
+
+    #about p{
+        font-size: 14px;
+        line-height: 40px;
+        padding: 18px;
+    }
+
+    .bg_baseball{
+        display: none;
+    }
+ }
