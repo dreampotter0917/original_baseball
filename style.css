@@ -131,6 +131,7 @@ nav a:hover{
     position: absolute;
     right: -600px;
     z-index: -2;
+    
 }
 
 .carp_right{
@@ -1003,7 +1004,56 @@ nav a:hover{
         padding: 18px;
     }
 
-    .bg_baseball{
+    .bg_basseball{
         display: none;
+    }
+
+    .carp_text p{
+        font-size: 14px;
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 35px;
+        top:100px;
+    }
+    .carp_left{
+        top:60px;
+    }
+
+    .carp_text p{
+        top:-16px;
+    }
+
+    .carp_menu{
+        display: block;
+    }
+
+    .carp_menu p{
+        top: -160px;
+        position: relative;
+    }
+
+    .carp_menu{
+        height: 820px;
+    }
+
+    .sankaku_ue{
+        top: 3577px;
+    }
+
+    .sankaku_sita{
+        top: -125px;
+    }
+
+    .to_menu{
+        text-align: center;
+    }
+
+    .to_menu p{
+        margin: 0px;
+        text-decoration: none;
+    }
+    
+    .carp_menu p span{
+        position: relative;
     }
  }
