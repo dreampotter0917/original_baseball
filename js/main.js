@@ -1,3 +1,8 @@
+$(window).on('load',function(){
+  $("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+  $("#splash_logo").delay(1200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
+});
+
 $(function(){
 	if (window.matchMedia('(max-width: 668px)').matches) {
 		/* ウィンドウサイズ668以下の処理を記述 */
@@ -22,7 +27,10 @@ $(function(){
       infinite: true, //スライドのループ
       pauseOnHover: false, //ホバーしたときにスライドを一時停止しない　
       centerMode: true,
+      centerPadding: "0%",
     });
+
+    
 
 	} else if (window.matchMedia('(min-width:669px)').matches) {
 		/* ウィンドウサイズ769以上の処理を記述 */

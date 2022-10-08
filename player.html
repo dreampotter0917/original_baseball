@@ -5,6 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+    <!--------------------スライダー見た目-------------------------------------------------->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <!------------------------------------------------------------------------------------->
+
+    <!--------------------jQuery----------------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!------------------------------------------------------------------------------------->
+
+    <!--------------------スライダー動かすやつ----------------------------------------------->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!------------------------------------------------------------------------------------->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXv
+ZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="style.css">
     <!-- フォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,188 +43,209 @@
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bubblegum+Sans&family=M+PLUS+Rounded+1c&family=Mochiy+Pop+P+One&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Permanent+Marker&display=swap"
         rel="stylesheet">
     <title>Document</title>
+
 </head>
+
+<div id="splash">
+    <div id="splash_logo"><img src="img/loading.png" alt="" class="fadeUp"></div>
+    <!--画像部分は適宜差し換えてください-->
+    <!--/splash-->
+</div>
+
 
 <body>
 
-    <input type="checkbox" id="overlay-input" />
-<label for="overlay-input" id="overlay-button"><span></span></label>
-  <div id="overlay">
-    <ul>
-      <li><a href="#">About </a></li>
-      <li><a href="#">Player</a></li>
-      <li><a href="#">Goods</a></li>
-      <li><a href="#">Game</a></li>
-      <li><a href="#">Let`s<table>
-      </table></a></li>
-    </ul>
-  </div>
+    <div id="splash">
+        <div id="splash_logo"><img src="img/loading.svg" alt="" class="fadeUp"></div>
+        <!--画像部分は適宜差し換えてください-->
+        <!--/splash-->
+    </div>
 
-
-
-
-    <nav>
-        <ul>
-            <a href="index.html">
-                <li>About
-            </a></li>
-            <a href="index.html">
-                <li>Carp
-            </a></li>
-            <a href="player.html">
-                <li>Player
-            </a></li>
-            <a href="goods.html">
-                <li>Goods
-            </a></li>
-            <a href="game.html">
-                <li>Game
-            </a></li>
-            <a href="index.html">
-                <li>Let's
-            </a></li>
-        </ul>
-    </nav>
-
-    <section id="player_main">
-        <h1>Player</h1>
-        <h2>選手</h2>
-        <div class="section1 player_header">
-            <div class="players">
-                <div class="one_player">
-                    <p class="playernumber">33</p>
-                    <p class="playername">Ryousuke<br>Kikuchi</p>
-
-                    <div class="sample_box"><img src="img/player_kikuchi.png"></div>
-                    <p class="playerhistory">
-                        内野手<br>
-                        中京学院大学<br>
-                        魅力：忍者のような守備
-                    </p>
-                </div>
-
-                <div class="one_player">
-                    <p class="playernumber">02</p>
-                    <p class="playername">Kousuke<br>Tanaka</p>
-                    <div class="sample_box"><img src="img/player_tanaka.png"></div>
-                    <p class="playerhistory">
-                        内野手<br>
-                        東海大学→JR東日本<br>
-                        魅力：俳優のようなソース顔
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="players">
-                <div class="one_player">
-                    <p class="playernumber">14</p>
-                    <p class="playername">Kouta<br>Hayashi</p>
-                    <div class="sample_box"><img src="img/player_hayasi.png"></div>
-                    <p class="playerhistory">
-                        内野手<br>
-                        智弁和歌山高校<br>
-                        魅力：逆方向へのホームラン
-                    </p>
-                </div>
-
-                <div class="one_player">
-                    <p class="playernumber">54</p>
-                    <p class="playername">Yuya<br>Nirasawa</p>
-                    <div class="sample_box"><img src="img/player_nirasawa.png"></div>
-                    <p class="playerhistory">
-                        内野手<br>
-                        花咲徳栄高校<br>
-                        魅力：芽生えの時期
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="players">
-                <div class="one_player">
-                    <p class="playernumber">69</p>
-                    <p class="playername">Ryutarou<br>Hatuki</p>
-                    <div class="sample_box"><img src="img/player_hatuki.png"></div>
-                    <p class="playerhistory">
-                        内野手<br>
-                        神村学園高<br>
-                        魅力：ドラフト７位からの反撃
-                    </p>
-                </div>
-
-                <div class="one_player">
-                    <p class="playernumber">63</p>
-                    <p class="playername">Ryoma<br>Nishikawa</p>
-                    <div class="sample_box"><img src="img/player_nisikawa.png"></div>
-                    <p class="playerhistory">
-                        外野手<br>
-                        敦賀気比高<br>
-                        魅力：スタイリッシュな打撃フォーム
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="players">
-                <div class="one_player">
-                    <p class="playernumber">55</p>
-                    <p class="playername">Ryuhei<br>Matuyama</p>
-                    <div class="sample_box"><img src="img/player_matuyama.png"></div>
-                    <p class="playerhistory">
-                        外野手<br>
-                        九州国際大<br>
-                        魅力：「鹿児島にいるじいちゃん、ばあちゃん今日俺やったよ」が名言
-                    </p>
-                </div>
-
-                <div class="one_player">
-                    <p class="playernumber">05</p>
-                    <p class="playername">Hisayoshi<br>Tyono</p>
-                    <div class="sample_box"><img src="img/player_tyono.png"></div>
-                    <p class="playerhistory">
-                        外野手<br>
-                        巨人<br>
-                        魅力：人柄の良さ
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="players">
-                <div class="one_player">
-                    <p class="playernumber">14</p>
-                    <p class="playername">Daichi<br>Osera</p>
-                    <div class="sample_box"><img src="img/player_osera.png"></div>
-                    <p class="playerhistory">
-                        投手<br>
-                        九州共立大<br>
-                        魅力：聖人のような性格の良さ
-                    </p>
-                </div>
-
-                <div class="one_player">
-                    <p class="playernumber">！</p>
-                    <p class="playername">slyly</p>
-                    <div class="sample_box"><img src="img/slyly.png"></div>
-                    <p class="playerhistory">
-                        趣味：悪戯、ダンス<br>
-                        体重：210cm、身長：100kg<br>
-                        魅力：目の表情
-                    </p>
-                </div>
-
-            </div>
-        </div>
-        <div class="section2">
-            <p><a href="https://www.carp.co.jp/">広島カープ公式ホームページはこちら</a></p>
+    <div id="container">
+        <input type="checkbox" id="overlay-input" />
+        <label for="overlay-input" id="overlay-button"><span></span></label>
+        <div id="overlay">
+            <ul>
+                <li><a href="index.html">About </a></li>
+                <li><a href="index.html">Player</a></li>
+                <li><a href="goods.html">Goods</a></li>
+                <li><a href=" game.html">Game</a></li>
+                <li><a href="index.html">Let`s<table>
+                        </table></a></li>
+            </ul>
         </div>
 
 
+        <nav class="pc_nav">
+            <ul>
+                <a href="index.html">
+                    <li>About
+                </a></li>
+                <a href="index.html">
+                    <li>Carp
+                </a></li>
+                <a href="player.html">
+                    <li>Player
+                </a></li>
+                <a href="goods.html">
+                    <li>Goods
+                </a></li>
+                <a href="game.html">
+                    <li>Game
+                </a></li>
+                <a href="index.html">
+                    <li>Let's
+                </a></li>
+            </ul>
+        </nav>
+        <section id="player_main">
+            <h1>Player</h1>
+            <h2>選手</h2>
+            <div class="player_header">
+                <div class="players">
+                    <div class="one_player">
+                        <p class="playernumber">33</p>
+                        <p class="playername">Ryousuke<br>Kikuchi</p>
+
+                        <div class="sample_box"><img src="img/player_kikuchi.png"></div>
+                        <p class="playerhistory">
+                            内野手<br>
+                            中京学院大学<br>
+                            魅力：忍者のような守備
+                        </p>
+                    </div>
+
+                    <div class="one_player">
+                        <p class="playernumber">02</p>
+                        <p class="playername">Kousuke<br>Tanaka</p>
+                        <div class="sample_box"><img src="img/player_tanaka.png"></div>
+                        <p class="playerhistory">
+                            内野手<br>
+                            東海大学→JR東日本<br>
+                            魅力：俳優のようなソース顔
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="players">
+                    <div class="one_player">
+                        <p class="playernumber">14</p>
+                        <p class="playername">Kouta<br>Hayashi</p>
+                        <div class="sample_box"><img src="img/player_hayasi.png"></div>
+                        <p class="playerhistory">
+                            内野手<br>
+                            智弁和歌山高校<br>
+                            魅力：逆方向へのホームラン
+                        </p>
+                    </div>
+
+                    <div class="one_player">
+                        <p class="playernumber">54</p>
+                        <p class="playername">Yuya<br>Nirasawa</p>
+                        <div class="sample_box"><img src="img/player_nirasawa.png"></div>
+                        <p class="playerhistory">
+                            内野手<br>
+                            花咲徳栄高校<br>
+                            魅力：芽生えの時期
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="players">
+                    <div class="one_player">
+                        <p class="playernumber">69</p>
+                        <p class="playername">Ryutarou<br>Hatuki</p>
+                        <div class="sample_box"><img src="img/player_hatuki.png"></div>
+                        <p class="playerhistory">
+                            内野手<br>
+                            神村学園高<br>
+                            魅力：ドラフト７位からの反撃
+                        </p>
+                    </div>
+
+                    <div class="one_player">
+                        <p class="playernumber">63</p>
+                        <p class="playername">Ryoma<br>Nishikawa</p>
+                        <div class="sample_box"><img src="img/player_nisikawa.png"></div>
+                        <p class="playerhistory">
+                            外野手<br>
+                            敦賀気比高<br>
+                            魅力：スタイリッシュな打撃フォーム
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="players">
+                    <div class="one_player">
+                        <p class="playernumber">55</p>
+                        <p class="playername">Ryuhei<br>Matuyama</p>
+                        <div class="sample_box"><img src="img/player_matuyama.png"></div>
+                        <p class="playerhistory">
+                            外野手<br>
+                            九州国際大<br>
+                            魅力：「鹿児島にいるじいちゃん、ばあちゃん今日俺やったよ」が名言
+                        </p>
+                    </div>
+
+                    <div class="one_player">
+                        <p class="playernumber">05</p>
+                        <p class="playername">Hisayoshi<br>Tyono</p>
+                        <div class="sample_box"><img src="img/player_tyono.png"></div>
+                        <p class="playerhistory">
+                            外野手<br>
+                            巨人<br>
+                            魅力：人柄の良さ
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="players">
+                    <div class="one_player">
+                        <p class="playernumber">14</p>
+                        <p class="playername">Daichi<br>Osera</p>
+                        <div class="sample_box"><img src="img/player_osera.png"></div>
+                        <p class="playerhistory">
+                            投手<br>
+                            九州共立大<br>
+                            魅力：聖人のような性格の良さ
+                        </p>
+                    </div>
+
+                    <div class="one_player">
+                        <p class="playernumber">！</p>
+                        <p class="playername">slyly</p>
+                        <div class="sample_box"><img src="img/slyly.png"></div>
+                        <p class="playerhistory">
+                            趣味：悪戯、ダンス<br>
+                            体重：210cm、身長：100kg<br>
+                            魅力：目の表情
+                        </p>
+                    </div>
+
+                </div>
+            </div>
 
 
-    </section>
+
+
+
+        </section>
+    </div>
 
 </body>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <polygon points="0,100 100,0 100,100" />
+</svg>
+</header>
+<article>
+    <section>
+        <p><a href="https://www.carp.co.jp/">広島カープ公式ホームページはこちら</a></p>
+    </section>
+</article>
 
 </html>
