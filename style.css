@@ -670,16 +670,18 @@ nav a:hover{
     font-style: italic;
     position: absolute;
     top:10px;
-    left: 270px;
+    left: 325px;
     width: 338px;
     letter-spacing: 4px;
+    text-align: left;
 }
 
 .playerhistory{
     font-weight: 14px;
     position: absolute;
     top: 200px;
-    left: 270px;
+    left: 330px;
+    text-align: left;
 }
 
 .players{
@@ -755,6 +757,7 @@ nav a:hover{
     font-size: 14px;
     padding-left: 30px;
     padding-right: 30px;
+    text-align: left;
 }
 
 .slider_text p{
@@ -890,7 +893,7 @@ section a{
     }
 
     .sample_box{
-        left: 12px;
+        left: -75px;
     }
 
     .playername{
@@ -1052,7 +1055,7 @@ section a{
     }
 
     h1,h2{
-        margin-left: -90px;
+        margin-left: -110px;
     }
 
     
@@ -1305,5 +1308,44 @@ section a{
 
     .sp_br{
         display: block;
+    }
+
+    .slider{
+        margin: 150px 0;
+       }
+    
+       /* スライダー改訂 */
+       .slider img{
+        width: 190px;
+       }
+    
+    /*-----------height調整----------*/
+    .slick-slide{
+        height:auto!important;
+        margin-right: 1vw!important;
+        margin-left: 1vw!important;
+    }
+    /*------------------------------*/
+    
+    
+    .slider_content{
+        display: block !important;
+        background-color: #403E3E;
+        height: 400px;
+        align-items: center;
+        padding-top: 10px;
+    }
+    
+    .slider_text{
+        color: #F7F1F0;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: left;
+    }
+
+    
+    .slider_text p{
+        margin-top: 10px;
     }
  }
