@@ -1364,4 +1364,9 @@ section a{
     #splash_sp{
         display: block;
     }
+
+    .fadeUp{
+        width: 100vw;
+        height: 100vh;
+    }
  }
