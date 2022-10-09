@@ -1,4 +1,16 @@
 $(window).on('load', function () {
+  $("#splash_sp").delay(1500).fadeOut('slow').queue(function () {
+     $("#splash_sp").remove(); 
+    });
+    $("#splash_logo_sp").delay(1200);
+    //ロゴを1.2秒（1200ms）待機してからフェードアウト
+  });
+
+
+
+
+
+$(window).on('load', function () {
       $("#splash").delay(1500).fadeOut('slow').queue(function () {
          $("#splash").remove(); 
         });
@@ -6,6 +18,8 @@ $(window).on('load', function () {
         //ロゴを1.2秒（1200ms）待機してからフェードアウト
       });
 
+
+      
       $(function () {
         if (window.matchMedia('(max-width: 668px)').matches) {
           /* ウィンドウサイズ668以下の処理を記述 */

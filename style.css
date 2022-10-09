@@ -850,6 +850,13 @@ section a{
     opacity: 0;
     }
     
+
+    #splash_sp{
+        display: none;
+    }
+
+
+
     @keyframes fadeUpAnime{
       from {
         opacity: 0;
@@ -1347,5 +1354,10 @@ section a{
     
     .slider_text p{
         margin-top: 10px;
+    }
+
+
+    #splash{
+        display: none;
     }
  }
