@@ -1360,4 +1360,8 @@ section a{
     #splash{
         display: none;
     }
+
+    #splash_sp{
+        display: block;
+    }
  }
